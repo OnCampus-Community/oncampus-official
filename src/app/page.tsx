@@ -1,10 +1,11 @@
 import Image from 'next/image'
-import {Second} from '@/components/index'
+import {Second, CustomButton} from '@/components/index'
 
 export default function Home() {
   return(
     <>
-      <Second />
+    <CustomButton style='blue' title='Hello world'/>
+      {/* <Second /> */}
     </>
   )
 }
