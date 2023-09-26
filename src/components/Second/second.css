@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Martian+Mono:wght@300&family=Skranji&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
-*{
+.second-container{
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -236,14 +236,4 @@
     position: relative;
     top: 40px;
     left: 350px;
-}
-hr{
-    margin-left: 20px;
-    display: block;
-    color: black;
-    background-color: black;
-    border-width: 5px;
-    border-radius: 5px;
-    width: 30%;
-    border: 3px solid #C6F806;
 }
