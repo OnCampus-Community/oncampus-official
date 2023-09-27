@@ -1,0 +1,37 @@
+name: Build and Deploy Next.js Website
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 20.6.0
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Next.js website
+        run: npm run build
+
+      - name: Capture Screenshots
+        run: |
+          npm install puppeteer
+          node capture-screenshots.js
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
