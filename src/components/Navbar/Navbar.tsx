@@ -22,10 +22,7 @@ export const Navbar = () => {
           <p>Join Comm</p>
           <p>about us</p>
         </div>
-        {/* <h2 className="text-xl font-bold -ml-16">onCampus Community</h2> */}
       </div>
     </>
   );
 };
-
-export default Navbar;
