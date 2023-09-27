@@ -1,10 +1,13 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import {Archivo} from '@next/font/google'
 
 interface Props {
   title: string;
   style: string;
 }
+
+const archivoFont = Archivo({subsets:["latin"], weight:"400"})
 
 export const index = (props: Props) => {
   const [btnColor, setBtnColor] = useState<string>("3366FF");
@@ -27,7 +30,7 @@ export const index = (props: Props) => {
   }, [props.style]);
 
   return (
-    <button className={`px-5 py-2 rounded-full font-semibold`} style={{background:`${btnColor}` , boxShadow: `${shadowColor}`}}>
+    <button className={`px-5 py-2 rounded-full text-xl font-semibold ${archivoFont.className}`} style={{background:`${btnColor}` , boxShadow: `${shadowColor}`}}>
       {props.title}
     </button>
   );
