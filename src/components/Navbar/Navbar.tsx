@@ -1,14 +1,15 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import {Inclusive_Sans} from '@next/font/google'
+import { Archivo } from "next/font/google";
 
-const customFont = Inclusive_Sans({subsets:["latin"], weight:"400"});
+const customFont = Archivo({ subsets: ["latin"], weight: "400" });
 
 export const Navbar = () => {
   return (
     <>
-      <div className={`${customFont.className} flex flex-row space-y-3 text-white w-[80%] justify-between items-center`}>
+      <div
+        className={`${customFont.className} flex flex-row space-y-3 text-white w-[80%] justify-between items-center`}>
         <Image
           src={"/FINALLOGO.png"}
           height={80}

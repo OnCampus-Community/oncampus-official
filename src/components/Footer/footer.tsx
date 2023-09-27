@@ -2,7 +2,7 @@ import React from 'react'
 import style from './footer.module.css'
 import Image from "next/image";
 
-export const index = () => {
+export const Footer = () => {
   return (
     <div className={style.footer}>
         <div className={style.footer_wrapper}>

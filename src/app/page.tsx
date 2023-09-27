@@ -3,12 +3,14 @@ import Image from "next/image";
 import {
   Navbar,
   Second,
-  CustomButton,
+  Third,
   Fourth,
+  CustomButton,
   ImageCard,
+  Footer,
 } from "@/components/index";
 
-import { Anton } from "@next/font/google";
+import { Anton } from "next/font/google";
 
 const antonFont = Anton({ subsets: ["latin"], weight: "400" });
 
@@ -39,15 +41,15 @@ export default function Home() {
               <CustomButton style="blue" title="Join Us" />
             </div>
             <div className="flex w-screen">
-              
               <ImageCard alt="Lo" image="/Test.jpg" size="normal" />
             </div>
           </div>
         </div>
       </div>
       <Second />
-      {/* <Fourth /> */}
-
+      <Third />
+      <Fourth />
+      <Footer />
     </>
   );
 }

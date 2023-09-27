@@ -1,13 +1,13 @@
-export { index as Second } from "./Second/index";
+export { Second } from "./Second/second";
 
-export { index as Third } from "./Third/index";
+export { Third } from "./Third/third";
 
-export { index as Fourth } from "./Fourth/index";
+export { Fourth } from "./Fourth/fourth";
 
-export { index as CustomButton } from "./Buttons/index";
+export { CustomButton } from "./Buttons/custom-btn";
 
-export { ImageCard } from "./ImageCard/ImageCard";
+export { ImageCard } from "./ImageCard/image-card";
 
-export { Navbar } from "./Navbar/Navbar";
+export { Navbar } from "./Navbar/navbar";
 
-export {index as Footer} from "./Footer/index"
+export { Footer} from "./Footer/footer"

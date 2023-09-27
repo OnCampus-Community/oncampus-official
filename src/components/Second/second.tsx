@@ -3,7 +3,7 @@ import "./second.css";
 import Image from "next/image";
 import { CustomButton } from "@/components/index";
 
-export const index = () => {
+export const Second = () => {
   return (
     <div className="second-container">
       <div className="second-wrapper">
@@ -27,7 +27,7 @@ export const index = () => {
                     small agencies to ignite creative sparks. We amplify diverse
                     talents, reshaping advertising dynamics. <br />
                     <br />
-                    Our unique teamwork approach unlocks each agency's
+                    Our unique teamwork approach unlocks each agency
                     strengths, crafting attention-grabbing campaigns that
                     redefine success.
                   </p>

@@ -2,7 +2,7 @@ import React from "react";
 import style from "./fourth.module.css";
 import Image from "next/image";
 
-export const index = () => {
+export const Fourth = () => {
   return (
     <div className={style.fourth}>
       <div className={style.fourthwrapper}>
@@ -23,9 +23,9 @@ export const index = () => {
           <div className={style.twoimage}></div>
         </div>
         <div className={style.fourththree}>
-          At Winfluence our clients' success stories speak volumes. Don't just
+          At Winfluence our clients success stories speak volumes. Dont just
           take our word for it – read what our clients have to say about their
-          experience partnering with us."
+          experience partnering with us.
         </div>
         <div className={style.fourthfour}>
           <div className={style.fourthfourwrapper}>

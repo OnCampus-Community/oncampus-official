@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import {Archivo} from '@next/font/google'
+import {Archivo} from 'next/font/google'
 
 interface Props {
   title: string;
@@ -9,7 +9,7 @@ interface Props {
 
 const archivoFont = Archivo({subsets:["latin"], weight:"400"})
 
-export const index = (props: Props) => {
+export const CustomButton = (props: Props) => {
   const [btnColor, setBtnColor] = useState<string>("3366FF");
   const [shadowColor, setShadowColor] = useState<string>("3px 5px rgba(255, 255, 255, 1)");
 
