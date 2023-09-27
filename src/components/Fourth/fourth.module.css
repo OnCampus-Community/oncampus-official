@@ -1,16 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap'); */
 
-*{
+.fourth{
     margin: 0;
     padding: 0;
     text-decoration: none;
     color: black;
     font-family: 'Kanit', sans-serif;
-
-        
-
 }
 .fourth{
     height: 100vh;
@@ -20,7 +17,7 @@
     
     vertical-align: middle;
 }
-.fourth-wrapper{
+.fourthwrapper{
     width: 90vw;
     height: 90vh;
     margin: auto;
@@ -32,7 +29,7 @@
     vertical-align:middle;
     
 }
-.fourth-one{
+.fourthone{
     width: 100%;
     height: 15%;
     
@@ -40,7 +37,7 @@
     justify-content: space-around;
   
 }
-.dot-box{
+.dotbox{
     width: 20%;
     height: 100%;
     
@@ -58,29 +55,29 @@
     margin-top: 15%;
 
 }
-.fourth-two{
+.fourthtwo{
     width: 100%;
     height: 25%;
    
     display: flex;
 }
-.two-text{
+.twotext{
     width: 70%;
     height: 100%;
     
     
 }
-.two-image{
+.twoimage{
     width: 30%;
     height: 100%;
    
 }
-.two-line{
+.twoline{
     font-size: 60px;
     padding-left: 20px;
     font-weight: bolder;
 }
-.two-line-bg{
+.twolinebg{
     display: inline;
     background-color: #0C0634;
     color: #FF1616;
@@ -88,7 +85,7 @@
     border-radius: 50px;
     border: 2px solid black;
 }
-.fourth-three{
+.fourththree{
     width: 100%;
     height: 20%;
    
@@ -99,12 +96,12 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
 }
-.fourth-four{
+.fourthfour{
     width: 100%;
     height: 40%;
  
 }
-.fourth-four-wrapper{
+.fourthfourwrapper{
     width: 97%;
     height: 90%;
     margin: auto;
@@ -116,18 +113,18 @@
     display: flex;
     flex-direction: column;
 }
-.four-top{
+.fourtop{
     width: 100%;
     height: 40%;
     margin-left: 15px;
     display: flex;
 }
-.four-bottom{
+.fourbottom{
     width: 100%;
     height: 60%;
   
 }
-.image-1{
+.image1{
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -135,20 +132,20 @@
     
     
 }
-.four-top-image{
+.fourtopimage{
     width: 12%;
     height: 100%;
     padding-left: 50px;
     padding-top: 20px;
     
 }
-.four-top-text{
+.fourtoptext{
     color: white;
     font-weight: bolder;
     font-size: 22px;
     padding-top: 12px;
 }
-.four-bottom-wrapper{
+.fourbottomwrapper{
     width: 90%;
     height: 90%;
     background-color: #C6F806;
@@ -157,7 +154,7 @@
     margin: auto;
    
 }
-.four-bottom-text{
+.fourbottomtext{
     padding: 15px 40px;
     font-size: 25px;
     text-align: center;
