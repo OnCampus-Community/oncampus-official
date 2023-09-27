@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import {
   Navbar,
   Second,
@@ -46,6 +47,7 @@ export default function Home() {
       </div>
       <Second />
       {/* <Fourth /> */}
+
     </>
   );
 }

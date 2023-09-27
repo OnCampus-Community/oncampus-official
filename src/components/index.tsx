@@ -9,3 +9,5 @@ export { index as CustomButton } from "./Buttons/index";
 export { ImageCard } from "./ImageCard/ImageCard";
 
 export { Navbar } from "./Navbar/Navbar";
+
+export {index as Footer} from "./Footer/index"
