@@ -6,7 +6,7 @@ import {
   CustomButton,
   ImageCard,
   Footer,
-} from "@/components";
+} from "@/components/index";
 
 import { Anton } from "next/font/google";
 
