@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import { Navbar, Second, CustomButton, Fourth, Footer } from "@/components/index";
+import { Navbar, Second, CustomButton, Fourth,Third, Footer } from "@/components/index";
 
 export default function Home() {
   return (
@@ -14,8 +14,10 @@ export default function Home() {
         </div>
       </div>
       <Second />
+      <Third/>
       <Fourth />
       <Footer/>
+      
     </>
   );
 }
