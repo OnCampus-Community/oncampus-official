@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    font-family: 'Kanit', sans-serif;
+
+        
+
+}
+.fourth{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    border-radius: 0px 0px 40px 40px ;
+    
+    vertical-align: middle;
+}
+.fourth-wrapper{
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    
+    flex-direction: column;
+    
+    vertical-align:middle;
+    
+}
+.fourth-one{
+    width: 100%;
+    height: 15%;
+    
+    display: flex;
+    justify-content: space-around;
+  
+}
+.dot-box{
+    width: 20%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.dots{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: #5642FF;
+    margin-top: 15%;
+
+}
+.fourth-two{
+    width: 100%;
+    height: 25%;
+   
+    display: flex;
+}
+.two-text{
+    width: 70%;
+    height: 100%;
+    
+    
+}
+.two-image{
+    width: 30%;
+    height: 100%;
+   
+}
+.two-line{
+    font-size: 60px;
+    padding-left: 20px;
+    font-weight: bolder;
+}
+.two-line-bg{
+    display: inline;
+    background-color: #0C0634;
+    color: #FF1616;
+    padding: 0px 30px;
+    border-radius: 50px;
+    border: 2px solid black;
+}
+.fourth-three{
+    width: 100%;
+    height: 20%;
+   
+    
+    padding: 30px 20px ;
+    font-size: 30px;
+    padding-right: 100px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+.fourth-four{
+    width: 100%;
+    height: 40%;
+ 
+}
+.fourth-four-wrapper{
+    width: 97%;
+    height: 90%;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #4271FF;
+    border: 3px solid black;
+    border-radius: 30px;
+    box-shadow: 7px 7px 7px 7px black;
+    display: flex;
+    flex-direction: column;
+}
+.four-top{
+    width: 100%;
+    height: 40%;
+    margin-left: 15px;
+    display: flex;
+}
+.four-bottom{
+    width: 100%;
+    height: 60%;
+  
+}
+.image-1{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid black;
+    
+    
+}
+.four-top-image{
+    width: 12%;
+    height: 100%;
+    padding-left: 50px;
+    padding-top: 20px;
+    
+}
+.four-top-text{
+    color: white;
+    font-weight: bolder;
+    font-size: 22px;
+    padding-top: 12px;
+}
+.four-bottom-wrapper{
+    width: 90%;
+    height: 90%;
+    background-color: #C6F806;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin: auto;
+   
+}
+.four-bottom-text{
+    padding: 15px 40px;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+}

@@ -1,10 +1,10 @@
 import Image from 'next/image'
-import {Second} from '@/components/index'
+import {Second,Fourth} from '@/components/index'
 
 export default function Home() {
   return(
     <>
-      <Second />
+      <Fourth />
     </>
   )
 }
