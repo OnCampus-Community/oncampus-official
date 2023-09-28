@@ -16,7 +16,7 @@ export const ImageCard = (props: Props) => {
 
   useEffect(()=> {
       if(props.size == 'normal')setSize({height: "200px", width:"300px"})
-      else if(props.size == 'large')setSize({height:"220px", width:"320px"})
+      else if(props.size == 'large')setSize({height:"240px", width:"340px"})
 
   },[props.size])
 

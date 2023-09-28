@@ -7,7 +7,8 @@ export { Fourth } from "./Fourth/fourth";
 export { CustomButton } from "./Buttons/custom-btn";
 
 export { ImageCard } from "./ImageCard/image-card";
+export { MobileImageCard } from "./ImageCard/mobileImageCard";
 
 export { Navbar } from "./Navbar/navbar";
 
-export { Footer} from "./Footer/footer"
+export { Footer } from "./Footer/footer";

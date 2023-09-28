@@ -1,0 +1,9 @@
+.Landing_text{
+    line-height: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+    .Landing_text{
+        line-height: 40px;
+    }
+}

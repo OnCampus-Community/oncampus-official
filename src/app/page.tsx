@@ -6,9 +6,11 @@ import {
   CustomButton,
   ImageCard,
   Footer,
+  MobileImageCard,
 } from "@/components/index";
-
+import style from "./page.module.css";
 import { Anton } from "next/font/google";
+
 
 const antonFont = Anton({ subsets: ["latin"], weight: "400" });
 
@@ -16,30 +18,47 @@ export default function Home() {
   return (
     <>
       <div
-        className={` ${antonFont.className} h-[100vh] w-screen bg-[#0C0634] flex justify-center text-white `}>
-        <div className="pt-10 flex flex-col w-[90%] justify-center">
+        className={` ${antonFont.className} md:h-[100vh] md:w-screen bg-[#0C0634] flex justify-center text-white `}>
+        <div className=" md:pt-1 flex flex-col w-[95%] md:w-[90%] justify-center">
           <Navbar />
-          <div className="flex flex-row h-full py-10 w-[100%]">
-            <div>
-              <p className="text-3xl font-bold text-[#C6F806] pt-10 mx-auto">
+          <div className="flex flex-col md:flex-row h-full md:py-10 w-[100%]">
+            {/* Landing page text----------------------------------- */}
+
+            <div className="flex flex-col space-y-5 md:justify-center items-center md:inline pb-10 md:h-auto ">
+              <p className="text-2xl md:text-3xl font-bold text-[#C6F806] pt-4 md:pt-10 mx-auto flex justify-center">
                 Welcome to onCampus
               </p>
               <div
-                className="text-4xl font-bold text-white py-10"
-                style={{ lineHeight: "80px" }}>
+                className={`${style.Landing_text} text-xl md:text-4xl font-bold text-white py-10`}>
                 <span className="inline-block text-black rounded-2xl bg-[#C6F806] px-5  -rotate-3">
                   <p>OnCampus</p>
                 </span>{" "}
                 <span className="px-2">
                   is a community for developers who want to learn, grow, and
-                  connect with other like-minded individuals. world of
-                  technology.
+                  connect with other like-minded individuals.
                 </span>
               </div>
-              <CustomButton style="blue" title="Join Us" />
+              <CustomButton style="blue" title="Explore Now" />
+              {/* Image Card for mobile view-------------------------- */}
+              <div className="flex flex-col md:hidden w-[100%] justify-center items-center space-y-7">
+                <MobileImageCard alt="H" image="/Im1.jpg" />
+                <MobileImageCard alt="Event" image="/Im2.jpg" />
+                <MobileImageCard alt="Event" image="/Im4.jpg" />
+              </div>
             </div>
-            <div className="flex w-screen">
-              <ImageCard alt="Lo" image="/Im1.jpg" size="normal" />
+
+            {/* Image Cards --------------------------------------- */}
+
+            <div className="hidden md:flex flex-col w-screen space-y-8 justify-center">
+              <div>
+                <ImageCard alt="Deepraj-Image" image="/Im1.jpg" size="normal" />
+              </div>
+              <div className="ml-32 rotate-2">
+                <ImageCard alt="Aditya" image="/Im2.jpg" size="large" />
+              </div>
+              <div className="">
+                <ImageCard alt="Event" image="/Im4.jpg" size="normal" />
+              </div>
             </div>
           </div>
         </div>
