@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Martian+Mono:wght@300&family=Skranji&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
-.second-container{
+.second_container{
     margin: 0;
     padding: 0;
     text-decoration: none;
     font-family: 'Anton', sans-serif;
 }
-.second-container{
+.second_container{
     height: 90vh;
     width: 100%;
     background-color: black;
     
 
 }
-.second-wrapper{
+.second_wrapper{
     width: 100%;
     height: 90vh;
     background-color: #3366FF;
@@ -23,7 +23,7 @@
     
     overflow: hidden;
 }
-.first-half{
+.first_half{
     height: 100%;
     width: 60%;
     margin: auto;
@@ -33,38 +33,36 @@
 
 
 }
-.first-line{
+.first_line{
     height: 30%;
     width: 100%;
     
 }
-.first-box{
+.first_box{
     height: 70%;
     width: 100%;
     
 
 }
-.second-half{
+.second_half{
     height: 100%;
     width: 40%;
     
     display: flex;
     flex-direction: column;
 }
-.first-half-wrapper{
-    margin: auto auto;
+
+.first_half_wrapper{
+    margin: auto ;
+    margin-top: 30px;
     width: 70%;
     height: 80%;
     background-color: white;
     border: 2px solid black;
     border-radius: 20px;
-    position: relative;
-    bottom: 380px;
-    right: 20px;
-    
-    
+    box-shadow: 20px 20px 0px #C6F806;   
 }
-.box-wrapper{
+.box_wrapper{
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -73,23 +71,23 @@
     margin: auto;
     margin-top: 20px;
 }
-.box-heading{
+.box_heading{
     width: 100%;
     height: 20%;
    
 }
-.box-heading-line{
+.box_heading_line{
     color: black;
     font-size: 40px;
     padding-left: 20px;
 }
-.box-hr{
+.box_hr{
 /* not working   */
 
     color: #C6F806;
     width: 20%;
 }
-.box-desc{
+.box_desc{
     width: 100%;
     height: 60%;
     
@@ -101,13 +99,13 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 200;
 }
-.box-button{
+.box_button{
     width: 100%;
     height: 20%;
     
     
 }
-.box-end-button{
+.box_end_button{
     background-color:#C6F806 ;
     border: 2px solid black;
     padding: 10px 20px;
@@ -121,23 +119,16 @@
     top: 10px;
 }
 
-.first-half-wrapper-bg{
-    margin: auto auto;
-    width: 70%;
-    height: 80%;
-    background-color: #C6F806;
-    border-radius: 20px;
-    position: relative;
-    top: 35px;
-    
-}
-.second-top{
+
+.second_top{
     height: 30%;
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
     
     
 }
-.second-bottom{
+.second_bottom{
     height: 70%;
     widows: 100%;
     
@@ -151,7 +142,7 @@
     rotate: 0deg;
     
 }
-.line-bag{
+.line_bag{
     display: inline;
     color: #171717;
     background-color: #C6F806;
@@ -172,7 +163,7 @@
     top: 20px;
     left: 50px;
 }
-.image-text{
+.image_text{
     color: black;
     font-weight: bolder;
     font-size: 60px;
@@ -233,7 +224,96 @@
 .image1{
     width: 150px;
     height: 150px;
-    position: relative;
-    top: 40px;
-    left: 350px;
+    margin-top: 30px;
+    margin-right: 60px;
+}
+
+@media screen and (max-width : 600px) {
+    .second_wrapper{
+        flex-direction: column;
+    }
+    .first_half{
+        height: 50%;
+        width: 90%;
+    }
+    .line{
+        padding-top: 30px;
+        font-weight: 200;
+        font-size: 22px;
+        
+        
+    }
+    .first_half_wrapper{
+        margin-top: 30px;
+        width: 90%;
+        height: 90%;
+        box-shadow: 15px 15px 0px #C6F806;   
+    }
+    .box_heading_line{
+        font-size: 20px;
+        padding: 10px;
+    }
+    .desc{
+        font-size: 12px;
+        padding: 0px 10px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 200;
+    }
+    .second_half{
+        height: 50%;
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .image1{
+        width: 50px;
+        height: 50px;
+        margin-top: 60px;
+        margin-right: 60px;
+    }
+    .image2{
+        height: 200px;
+        width: 200px;
+        top: 0px;
+        left: 90px;
+    }
+    .dot1{
+        width: 40px;
+        height: 40px;
+        bottom: 40px;
+        left: 230px;
+    }
+    .dot2{
+        width: 10px;
+        height: 10px;
+        bottom: 100px;
+        left: 250px;
+    }
+    .image_text{
+        font-weight: 700;
+        font-size: 30px;
+        bottom: 135px;
+        left: 130px;
+        rotate: -5deg;  
+    }
+    .dot3{
+        width: 20px;
+        height: 20px;
+        bottom: 217px;
+        left:100px;
+    }
+    .dot4{
+        width: 30px;
+        height: 30px;
+        bottom: 242px;
+        left:95.3px;
+    }
+    .dot5{
+        width: 15px;
+        height: 15px;
+        bottom: 100px;
+        left:200px;
+    }
+    
 }
