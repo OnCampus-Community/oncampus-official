@@ -39,7 +39,7 @@ export default function Home() {
               <CustomButton style="blue" title="Join Us" />
             </div>
             <div className="flex w-screen">
-              <ImageCard alt="Lo" image="/Test.jpg" size="normal" />
+              <ImageCard alt="Lo" image="/Im1.jpg" size="normal" />
             </div>
           </div>
         </div>
