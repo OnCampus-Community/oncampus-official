@@ -8,6 +8,6 @@ export { CustomButton } from "./Buttons/custom-btn";
 
 export { ImageCard } from "./ImageCard/image-card";
 export { MobileImageCard } from "./ImageCard/mobileImageCard";
-export { Navbar } from "./Navbar/navbar";
+export { Navbar } from "./Navbar/Navbar";
 
 export { Footer } from "./Footer/footer";
