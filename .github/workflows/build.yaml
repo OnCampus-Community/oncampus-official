@@ -25,10 +25,10 @@ jobs:
       - name: Build Next.js website
         run: npm run build
 
-      - name: Capture Screenshots
-        run: |
-          npm install puppeteer
-          node capture-screenshots.js
+      # - name: Capture Screenshots
+      #   run: |
+      #     npm install puppeteer
+      #     node capture-screenshots.js
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
