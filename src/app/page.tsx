@@ -56,7 +56,7 @@ export default function Home() {
                   connect with other like-minded individuals.
                 </span>
               </div>
-              <CustomButton style="blue" title="Explore Now" />
+              <CustomButton style="blue" title="Join Discord" />
               <div>
                 <CustomButton style="black" title={`Discord Members ${disordMemberCount?.toString()}`} />
               </div>
