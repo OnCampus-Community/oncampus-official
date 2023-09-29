@@ -12,8 +12,8 @@ export const MobileImageCard = (props: Props) => {
       <Image
         src={props.image}
         alt={props.alt}
-        height={100}
-        width={100}
+        height={1000}
+        width={1000}
 
         className="h-full w-full rounded-2xl"
         style={{ boxShadow: "13px 15px #C6F806" }}

@@ -62,9 +62,9 @@ export default function Home() {
               </div>
               {/* Image Card for mobile view-------------------------- */}
               <div className="flex flex-col md:hidden w-[100%] justify-center items-center space-y-7">
-                <MobileImageCard alt="H" image="/Im1.jpg" />
+                <MobileImageCard alt="Event" image="/Im1.jpg" />
                 <MobileImageCard alt="Event" image="/Im2.jpg" />
-                <MobileImageCard alt="Event" image="/Im4.jpg" />
+                <MobileImageCard alt="Event" image="/Im3.jpg" />
               </div>
             </div>
 
@@ -78,7 +78,7 @@ export default function Home() {
                 <ImageCard alt="Aditya" image="/Im2.jpg" size="large" />
               </div>
               <div className="">
-                <ImageCard alt="Event" image="/Im4.jpg" size="normal" />
+                <ImageCard alt="Event" image="/Im3.jpg" size="normal" />
               </div>
             </div>
           </div>
