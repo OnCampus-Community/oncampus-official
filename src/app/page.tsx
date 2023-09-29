@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <>
       <div
-        className={` ${antonFont.className} md:h-[100vh] md:w-screen bg-[#0C0634] flex justify-center text-white `}>
+        className={` ${antonFont.className} md:h-[1000px] md:w-screen bg-[#0C0634] flex justify-center text-white `}>
         <div className=" md:pt-1 flex flex-col w-[95%] md:w-[90%] justify-center">
           <Navbar />
           <div className="flex flex-col md:flex-row h-full md:py-10 w-[100%]">

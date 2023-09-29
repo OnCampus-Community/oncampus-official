@@ -1,6 +1,7 @@
 .third{
     width: 100vw;
-    height: 110vh;
+    /* height: 110vh; */
+    height: 1000px;
     background-color: white;
     
 }
@@ -79,7 +80,7 @@
 }
 .third_bottom{
     width: 100vw;
-    height: 60vh;
+    height: 600px;
     display: flex;
     justify-content: space-around;
     margin-top: 0px;
