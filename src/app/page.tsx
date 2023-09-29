@@ -70,7 +70,7 @@ export default function Home() {
 
             {/* Image Cards --------------------------------------- */}
 
-            <div className="hidden md:flex flex-col w-screen space-y-8 justify-center">
+            <div className="hidden md:flex flex-col w-screen space-y-8 justify-center items-center">
               <div>
                 <ImageCard alt="Deepraj-Image" image="/Im1.jpg" size="normal" />
               </div>
