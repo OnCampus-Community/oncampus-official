@@ -26,8 +26,8 @@ export const ImageCard = (props: Props) => {
       <Image
         src={props.image}
         alt={props.alt}
-        height={100}
-        width={100}
+        height={1000}
+        width={1000}
         className="-translate-x-[270px] translate-y-3 rounded-2xl border-4 border-yellow-200"
         style={{ height: size.height, width: "auto" }}
       />
