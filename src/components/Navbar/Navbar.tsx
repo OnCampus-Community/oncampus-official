@@ -18,10 +18,10 @@ export const Navbar = () => {
           className="mt-10 md:pt-0"
         />
         <div className="right flex border-[#C6F806] border-2 h-16 w-[100%] md:w-[70%] rounded-full justify-between items-center px-4  md:px-10 cursor-pointer">
+          <p>Projects</p>
+          <p>About us</p>
           <p>Services</p>
-          <p>Work</p>
-          <p>Join Comm</p>
-          <p>about us</p>
+          <p>Reviews</p>
         </div>
       </div>
     </>
