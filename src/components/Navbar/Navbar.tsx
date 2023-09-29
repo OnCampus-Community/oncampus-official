@@ -39,7 +39,7 @@ export const Navbar = () => {
           className="mt-10 md:pt-0"
         />
         <div className="right flex border-[#C6F806] border-2 h-16 w-[100%] md:w-[70%] rounded-full justify-between items-center px-4  md:px-10 cursor-pointer">
-          <p>Projects</p>
+          <Link href={"/projects"}>Projects</Link>
           <p onClick={scrollAboutUs}>About us</p>
           <p onClick={scrollServices}>Services</p>
           <p onClick={scrollReviews}>Reviews</p>

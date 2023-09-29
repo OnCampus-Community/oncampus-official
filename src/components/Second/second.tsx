@@ -1,5 +1,5 @@
 import React from "react";
-import style from './second.module.css'
+import style from "./second.module.css";
 import Image from "next/image";
 import { CustomButton } from "@/components/index";
 
@@ -15,7 +15,6 @@ export const Second = () => {
             </div>
           </div>
           <div className={style.first_box}>
-        
             <div className={style.first_half_wrapper}>
               <div className={style.box_wrapper}>
                 <div className={style.box_heading}>
@@ -23,15 +22,21 @@ export const Second = () => {
                 </div>
                 <div className={style.box_desc}>
                   <p className={style.desc}>
-                  We provide a supportive and inclusive environment where individuals can start or continue their journey in open source development. Our work involves identifying projects that align with our mission and providing resources and support to help them succeed.
-                  
-<br />
+                    We provide a supportive and inclusive environment where
+                    individuals can start or continue their journey in open
+                    source development. Our work involves identifying projects
+                    that align with our mission and providing resources and
+                    support to help them succeed.
                     <br />
-                    We believe that open source development is not just about writing code, but also about creating a positive impact on the world and supporting the growth of our student developer community.
+                    <br />
+                    We believe that open source development is not just about
+                    writing code, but also about creating a positive impact on
+                    the world and supporting the growth of our student developer
+                    community.
                   </p>
                 </div>
                 <div className={style.box_button}>
-                  <CustomButton title="Read our Mission" style="neon" />
+                  <CustomButton title="Read our Mission" style="neon" url="https://github.com/sponsors/OnCampus-Community" />
                 </div>
               </div>
             </div>

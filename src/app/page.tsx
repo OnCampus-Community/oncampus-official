@@ -10,11 +10,11 @@ import {
   MobileImageCard,
 } from "@/components/index";
 import style from "./page.module.css";
-import { Anton } from "next/font/google";
+import { Russo_One } from "next/font/google";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const antonFont = Anton({ subsets: ["latin"], weight: "400" });
+const antonFont = Russo_One({ subsets: ["latin"], weight: "400" });
 
 export default function Home() {
   const [disordMemberCount, setDiscordMemberCount] = useState<number>(0);
@@ -43,11 +43,11 @@ export default function Home() {
             {/* Landing page text----------------------------------- */}
 
             <div className="flex flex-col space-y-5 md:justify-center items-center md:inline pb-10 md:h-auto ">
-              <p className="text-2xl md:text-3xl font-bold text-[#C6F806] pt-4 md:pt-10 mx-auto flex justify-center">
+              <p className="text-2xl md:text-3xl font-bold text-[#C6F806] pt-4 md:pt-10 mx-auto flex">
                 Welcome to onCampus
               </p>
               <div
-                className={`${style.Landing_text} text-xl md:text-4xl font-bold text-white py-10`}>
+                className={`${style.Landing_text} text-3xl md:text-5xl font-bold text-white py-10`}>
                 <span className="inline-block text-black rounded-2xl bg-[#C6F806] px-5  -rotate-3">
                   <p>OnCampus</p>
                 </span>{" "}
