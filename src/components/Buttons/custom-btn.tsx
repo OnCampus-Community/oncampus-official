@@ -34,7 +34,7 @@ export const CustomButton = (props: Props) => {
   }, [props.style]);
 
   return (
-    <Link href={props.url || ""}>
+    <Link href={props.url || ""} target="__blank">
       <button
         className={`px-5 py-2 rounded-full text-xl font-semibold ${archivoFont.className}`}
         style={{ background: `${btnColor}`, boxShadow: `${shadowColor}` }}>
