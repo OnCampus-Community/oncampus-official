@@ -1,3 +1,4 @@
+"use client";
 import {
   Navbar,
   Second,
@@ -10,11 +11,28 @@ import {
 } from "@/components/index";
 import style from "./page.module.css";
 import { Anton } from "next/font/google";
-
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const antonFont = Anton({ subsets: ["latin"], weight: "400" });
 
 export default function Home() {
+  const [disordMemberCount, setDiscordMemberCount] = useState<number>(0);
+
+  const getDiscordMemberCount = (serverUrl: string) => {
+    axios
+      .get(
+        `https://discord.com/api/v9/invites/${serverUrl}?with_counts=true&with_expiration=true`
+      )
+      .then((res) => {
+        setDiscordMemberCount(res.data.approximate_member_count);
+      });
+  };
+
+  useEffect(() => {
+    getDiscordMemberCount("nsam6YzE8R");
+  }, []);
+
   return (
     <>
       <div
@@ -39,6 +57,9 @@ export default function Home() {
                 </span>
               </div>
               <CustomButton style="blue" title="Explore Now" />
+              <div>
+                <CustomButton style="black" title={`Discord Members ${disordMemberCount?.toString()}`} />
+              </div>
               {/* Image Card for mobile view-------------------------- */}
               <div className="flex flex-col md:hidden w-[100%] justify-center items-center space-y-7">
                 <MobileImageCard alt="H" image="/Im1.jpg" />
