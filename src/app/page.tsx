@@ -56,9 +56,16 @@ export default function Home() {
                   connect with other like-minded individuals.
                 </span>
               </div>
-              <CustomButton style="blue" title="Join Discord" url="https://discord.gg/nsam6YzE8R" />
+              <CustomButton
+                style="blue"
+                title="Join Discord"
+                url="https://discord.gg/nsam6YzE8R"
+              />
               <div>
-                <CustomButton style="blue" title={`Discord Members ${disordMemberCount?.toString()}`} />
+                <CustomButton
+                  style="blue"
+                  title={`Discord Members ${disordMemberCount?.toString()}`}
+                />
               </div>
               {/* Image Card for mobile view-------------------------- */}
               <div className="flex flex-col md:hidden w-[100%] justify-center items-center space-y-7">
@@ -84,7 +91,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Second />
+      <div id="section2">
+        <Second />
+      </div>
       <Third />
       <Fourth />
       <Footer />
