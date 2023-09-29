@@ -60,6 +60,7 @@
     height: 25%;
    
     display: flex;
+    align-items: center;
 }
 .twotext{
     width: 70%;
