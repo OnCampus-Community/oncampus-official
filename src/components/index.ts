@@ -12,3 +12,4 @@ export { Navbar } from "./Navbar/Navbar";
 export { ProjectCard } from "./ProjectCard/ProjectCard";
 
 export { Footer } from "./Footer/footer";
+export {Fifth} from "./Fifth/fifth";

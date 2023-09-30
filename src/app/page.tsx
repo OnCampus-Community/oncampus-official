@@ -7,6 +7,7 @@ import {
   CustomButton,
   ImageCard,
   Footer,
+  Fifth,
   MobileImageCard,
 } from "@/components/index";
 import style from "./page.module.css";
@@ -96,6 +97,7 @@ export default function Home() {
       </div>
       <Third />
       <Fourth />
+      <Fifth/>
       <Footer />
     </>
   );
