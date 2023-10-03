@@ -223,15 +223,17 @@
 @media screen and (max-width : 600px) {
     .second_wrapper{
         flex-direction: column;
+        height: 700px;
     }
+ 
     .first_half{
-        height: 50%;
+        height: 90%;
         width: 90%;
     }
     .line{
         padding-top: 30px;
         font-weight: 200;
-        font-size: 22px;
+        font-size: 29px;
         
         
     }
@@ -242,11 +244,14 @@
         box-shadow: 15px 15px 0px #C6F806;   
     }
     .box_heading_line{
-        font-size: 20px;
+        font-size: 30px;
         padding: 10px;
     }
+    .box_desc{
+        overflow: hidden;
+    }
     .desc{
-        font-size: 10px;
+        font-size: 13px;
         padding: 0px 10px;
         font-family: 'Open Sans', sans-serif;
         font-weight: 200;
@@ -255,7 +260,7 @@
         height: 50%;
         width: 100%;
         
-        display: flex;
+        display: none;
         flex-direction: column;
     }
     .image1{

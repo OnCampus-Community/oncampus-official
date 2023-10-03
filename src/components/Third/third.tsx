@@ -8,7 +8,7 @@ export const Third = () => {
       <div className={style.third_wrapper}>
         <div className={style.third_top}>
           <div className="w-[100%] h-[100%] m-auto flex sm:w-[90%]">
-          <div className="w-[30%] h-[100%] flex items-center justify-end sm:w-[20%] sm:items-baseline">
+          <div className="hidden w-[30%] h-[100%] md:flex items-center justify-end sm:w-[20%] sm:items-baseline">
             <div className="w-[33%] h-[20%] rounded-full border-2 border-black relative left-[30px] z-10 sm:w-[100px] sm:h-[100px] sm:mt-[50px]"></div>
             <div className="w-[33%] h-[20%] rounded-full border-2 border-black relative left-[15px] bg-[#C6F806] sm:w-[100px] sm:h-[100px]"></div>
             <div className="w-[33%] h-[20%] rounded-full border-2 border-black bg-[#3366FF] sm:w-[100px] sm:h-[100px]"></div>

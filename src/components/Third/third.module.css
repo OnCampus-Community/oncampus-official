@@ -130,14 +130,16 @@
 
 @media screen and (max-width : 600px) {
     .third_top_line{
-        font-size: 16px ;
+        font-size: 25px ;
         padding-top: 50px;
         font-weight: 700;
+        margin: auto;
     }
     .third_top_bg{
         padding: 0px 10px;
     }
     .third_top_image2{
+        display: none;
         padding-top: 30px;
     }
     .third_middle{

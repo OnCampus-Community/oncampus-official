@@ -9,6 +9,7 @@ import {
   Footer,
   Fifth,
   MobileImageCard,
+
 } from "@/components/index";
 import style from "./page.module.css";
 import { Russo_One } from "next/font/google";
@@ -97,6 +98,7 @@ export default function Home() {
       </div>
       <Third />
       <Fourth />
+
       <Fifth/>
       <Footer />
     </>
