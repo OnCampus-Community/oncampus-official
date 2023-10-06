@@ -99,7 +99,19 @@ export const Third = () => {
             </div>
           </div>
         </div>
+        <div className=" h-[20px] m:h-[0px] bg-[#ffffff] flex justify-end">
+      <a href="#">
+      <Image
+              className="w-[30px] h-[30px]  md:w-[80px] md:h-[80px] relative top-[20px] m:bottom-[100px] right-[32px] md:right-[30px]"
+              src="/up-arrow.png"
+              alt="image here"
+              width={100}
+              height={100}
+            />
+      </a>
       </div>
+      </div>
+      
     </div>
   );
 };
