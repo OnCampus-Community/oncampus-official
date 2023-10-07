@@ -9,7 +9,6 @@ import {
   Footer,
   Fifth,
   MobileImageCard,
-
 } from "@/components/index";
 import style from "./page.module.css";
 import { Russo_One } from "next/font/google";
@@ -31,6 +30,13 @@ export default function Home() {
         setDiscordMemberCount(res.data.approximate_member_count);
       });
   };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
+  }
 
   useEffect(() => {
     getDiscordMemberCount("nsam6YzE8R");
@@ -95,15 +101,14 @@ export default function Home() {
         </div>
       </div>
       <div className=" h-[0px] bg-[#3366ff] flex justify-end">
-      <a href="#">
-      <Image
-              className="md:w-[70px] w-[40px] h-[40px] md:h-[70px] fixed right-[30px] bottom-[30px] md:bottom-[50px] md:right-[90px]"
-              src="/up-arrow.png"
-              alt="image here"
-              width={100}
-              height={100}
-            />
-      </a>
+          <Image
+            className="md:w-[70px] w-[40px] h-[40px] md:h-[70px] fixed right-[30px] bottom-[30px] md:bottom-[50px] cursor-pointer "
+            src="/up-arrow.png"
+            alt="image here"
+            width={100}
+            height={100}
+            onClick={scrollToTop}
+          />
       </div>
 
       <div id="section2">
@@ -112,7 +117,7 @@ export default function Home() {
       <Third />
       <Fourth />
 
-      <Fifth/>
+      <Fifth />
       <Footer />
     </>
   );
