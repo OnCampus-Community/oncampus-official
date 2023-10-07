@@ -100,6 +100,7 @@ export const Third = () => {
           </div>
         </div>
       </div>
+      
     </div>
   );
 };

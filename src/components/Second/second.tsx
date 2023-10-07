@@ -70,6 +70,8 @@ export const Second = () => {
           </div>
         </div>
       </div>
+
+      
     </div>
   );
 };

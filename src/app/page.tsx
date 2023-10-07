@@ -15,6 +15,7 @@ import style from "./page.module.css";
 import { Russo_One } from "next/font/google";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Image from "next/image";
 
 const antonFont = Russo_One({ subsets: ["latin"], weight: "400" });
 
@@ -93,6 +94,18 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className=" h-[0px] bg-[#3366ff] flex justify-end">
+      <a href="#">
+      <Image
+              className="md:w-[70px] w-[40px] h-[40px] md:h-[70px] fixed right-[30px] bottom-[30px] md:bottom-[50px] md:right-[90px]"
+              src="/up-arrow.png"
+              alt="image here"
+              width={100}
+              height={100}
+            />
+      </a>
+      </div>
+
       <div id="section2">
         <Second />
       </div>
