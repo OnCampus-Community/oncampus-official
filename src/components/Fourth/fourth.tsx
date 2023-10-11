@@ -36,7 +36,7 @@ export const Fourth = () => {
           take our word for it – read what our clients have to say about their
           experience partnering with us.
         </div>
-        <Slide />
+        <Slide im="/person.png" name="John doe" position="marketing" text="Jello" />
       </div>
     </div>
   );
