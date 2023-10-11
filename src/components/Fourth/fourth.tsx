@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { use, useEffect, useState } from "react";
 import style from "./fourth.module.css";
 import Image from "next/image";
 import { slide as Slide, Props as IRevs } from "../Slides/slide";
@@ -13,11 +13,32 @@ export const Fourth = () => {
     text: "Hello world",
   });
 
+  const [keyId, setKey] = useState<number>(1);
+
   useEffect(() => {
     setTimeout(() => {
-      setReviews(revs.rev1);
-    }, 3000);
-  }, []);
+      getIndex(revs.rev1.key);
+      if (keyId == 1) {
+        setReviews(revs.rev1);
+      } else if (keyId == 2) {
+        setReviews(revs.rev2);
+      } else if (keyId == 3) {
+        setReviews(revs.rev3);
+      } else {
+        setReviews(revs.rev4);
+      }
+    }, 5000);
+  }, [keyId]);
+
+  const getIndex = (num: number) => {
+    setKey((prev)=>{
+      if(prev == 4){
+        return prev = 1
+      }else{
+        return prev +=1;
+      }
+    })
+  };
 
   return (
     <div className={style.fourth}>

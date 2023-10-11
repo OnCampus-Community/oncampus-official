@@ -8,6 +8,7 @@ export interface Props {
     name: string;
     position: string;
     text: string;
+    key?: number;
 }
 
 export const slide = (props: Props) => {
