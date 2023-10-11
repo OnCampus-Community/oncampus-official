@@ -1,9 +1,24 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import style from "./fourth.module.css";
 import Image from "next/image";
-import { slide as Slide } from "../Slides/slide";
+import { slide as Slide, Props as IRevs } from "../Slides/slide";
+import revs from "./reviews.json";
 
 export const Fourth = () => {
+  const [reviews, setReviews] = useState<IRevs>({
+    im: "/person.png",
+    name: "John Doe",
+    position: "marketing",
+    text: "Hello world",
+  });
+
+  useEffect(() => {
+    setTimeout(() => {
+      setReviews(revs.rev1);
+    }, 3000);
+  }, []);
+
   return (
     <div className={style.fourth}>
       <div className={style.fourthwrapper}>
@@ -36,7 +51,12 @@ export const Fourth = () => {
           take our word for it – read what our clients have to say about their
           experience partnering with us.
         </div>
-        <Slide />
+        <Slide
+          im={reviews.im}
+          name={reviews.name}
+          position={reviews.position}
+          text={reviews.text}
+        />
       </div>
     </div>
   );

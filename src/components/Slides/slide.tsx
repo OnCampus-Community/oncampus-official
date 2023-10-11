@@ -3,7 +3,14 @@ import Image from "next/image";
 
 import React from "react";
 
-export const slide = () => {
+export interface Props {
+    im: string;
+    name: string;
+    position: string;
+    text: string;
+}
+
+export const slide = (props: Props) => {
   return (
     <>
       <div className={style.fourthfour}>
@@ -12,7 +19,7 @@ export const slide = () => {
             <div className={style.fourtopimage}>
               <Image
                 className={style.image1}
-                src="/client.png"
+                src={props.im}
                 alt="image here"
                 width={200}
                 height={200}
@@ -20,8 +27,8 @@ export const slide = () => {
             </div>
             <div className={style.fourtoptext}>
               <p className={style.fourtoptext}>
-                John Doe <br />
-                Marketing Director, Company A
+                {props.name} <br />
+                {props.position}
               </p>
             </div>
           </div>
@@ -29,9 +36,7 @@ export const slide = () => {
           <div className={style.fourbottom}>
             <div className={style.fourbottomwrapper}>
               <p className={style.fourbottomtext}>
-                Working with Winfluence was a game-changer for us. Their
-                innovative digital strategies propelled our brand to new
-                heights, resulting in a 30% increase in website traffic
+                {props.text}
               </p>
             </div>
           </div>
