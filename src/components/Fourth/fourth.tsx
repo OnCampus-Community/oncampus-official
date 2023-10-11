@@ -1,5 +1,5 @@
 "use client";
-import React, { use, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import style from "./fourth.module.css";
 import Image from "next/image";
 import { slide as Slide, Props as IRevs } from "../Slides/slide";
