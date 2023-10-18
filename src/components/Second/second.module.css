@@ -223,7 +223,18 @@
 @media screen and (max-width : 600px) {
     .second_wrapper{
         flex-direction: column;
-        height: 700px;
+        height: 800px;
+    }
+    .first_line{
+        height: 20%;
+
+        
+    }
+    .first_box{
+        height: 70%;
+
+        
+    
     }
  
     .first_half{
@@ -240,7 +251,7 @@
     .first_half_wrapper{
         margin-top: 30px;
         width: 90%;
-        height: 90%;
+        height: 100%;
         box-shadow: 15px 15px 0px #C6F806;   
     }
     .box_heading_line{
@@ -251,7 +262,7 @@
         overflow: hidden;
     }
     .desc{
-        font-size: 13px;
+        font-size: 15px;
         padding: 0px 10px;
         font-family: 'Open Sans', sans-serif;
         font-weight: 200;
