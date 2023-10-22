@@ -23,8 +23,8 @@
     "rev4": {
         "key":4,
         "im": "/person.png",
-        "name": "NextJs",
+        "name": "User",
         "position": "marketing",
-        "text": "Hello this is NexTJs"
+        "text": "Hello this is User"
     }
 }
